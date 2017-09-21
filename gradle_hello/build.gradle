@@ -8,7 +8,7 @@ apply plugin: 'java'
 // prefer. In this case NetBeans will not add these tasks but you may rely on
 // your own implementation.
 if (!hasProperty('mainClass')) {
-    ext.mainClass = 'Hello'
+    ext.mainClass = 'Lab2'//'Hello'
 }
 
 repositories {
@@ -31,7 +31,7 @@ sourceSets {
 }
 
 jar{
-    manifest.attributes "Main-Class": "Hello"
+    manifest.attributes "Main-Class": "Lab2"//"Hello"
 }
 
 task runBuild(type: JavaExec, dependsOn: [build, classes]){
