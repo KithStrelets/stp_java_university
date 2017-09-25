@@ -122,15 +122,15 @@ public class Lab2 {
     
     static int checkedinput(){
         int input;
+        Scanner newsc = new Scanner(System.in);
         while(true){
-        try{
-            input = sc.nextInt();
-            break;
-        }
-        catch(InputMismatchException | NegativeArraySizeException e){
-            System.out.println("Input mistake, type another one:");
-            checkedinput();
-        }
+            try{
+                input = newsc.nextInt();
+                break;
+            } catch(NegativeArraySizeException | InputMismatchException e){ //ошибка связана с самим массивом???
+                System.out.println("Input mistake, type another one:");
+                return checkedinput();
+            }
         }
         return input;
     }
