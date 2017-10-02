@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab3;
+
 
 import java.util.Arrays;
 import java.util.Random;
@@ -143,6 +143,7 @@ public class Lab3 {
         return i+1;
     }
     
+
     static void quick(int arr[], int low, int high)
     {
         if (low < high)

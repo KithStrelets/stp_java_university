@@ -2,3 +2,6 @@
 /test/nbproject/private/
 /test/build/
 /lab4/nbproject/private/
+/lab4/dist/
+/lab4/build/
+/example-gradle-master/.nb-gradle/
